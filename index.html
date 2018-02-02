@@ -1,195 +1,35 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Sale Rush</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="TemplateData/UnityProgress.js"></script>
+  </head>
+  <body class="template">
+    <p class="header"><span>Unity WebGL Player | </span>Sale Rush</p>
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="900px"></canvas>
+      <br>
+      <div class="logo"></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title">Sale Rush</div>
+    </div>
+    <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 536870912,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Release/_builds.data",
+    codeUrl: "Release/_builds.js",
+    memUrl: "Release/_builds.mem",
+    
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
 
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Home - Bongsung website</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
-
-  <!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
-
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
-	
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
-	<body class="boxed">
-
-	<!-- Loader -->
-	<div class="fh5co-loader"></div>
-
-	<div id="wrap">
-
-	<div id="fh5co-page">
-		<header id="fh5co-header" role="banner">
-			<div class="container">
-				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-				<div id="fh5co-logo"><a href="index.html"><img title="home" src="images/BB_Logo_ed.png" alt="Free HTML5 Website Template"></a></div>
-				<nav id="fh5co-main-nav" role="navigation">
-					<ul>
-						<li><a href="about.html">About me</a></li>
-						<li class="has-sub">
-							<div class="drop-down-menu">
-								<a href="#">Undergraduate Projects</a>
-								<div class="dropdown-menu-wrap">
-									<ul>
-										<li><a href="salerush.html">Game Programming - SaleRush</a></li>
-										<li><a href="data_vis.html">Data Visualization - interactive scatterplot</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li><a href="#">Portfolio</a></li>
-						<li class="has-sub">
-							<div class="drop-down-menu">
-								<a href="#">Sidebars</a>
-								<div class="dropdown-menu-wrap">
-									<ul>
-										<li><a href="#">Right Sidebar</a></li>
-										<li><a href="#">Left Sidebar</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<!-- Header -->
-
-		<div class="fh5co-slider">
-			<div class="container">
-				<div class="owl-carousel owl-carousel-main">
-				  <div><a href="about.html"><img title="about me" src="images/myself1_slider.png" alt="Free HTML5 Website Template"></a></div>
-				  <div><a href="salerush.html"><img title="game programming project" src="images/salerush_splash_slider.png" alt="Free HTML5 Website Template"></a></div>
-				  <div><a href="data_vis.html"><img title="visualization project" src="images/d3_slider.png" alt="Free HTML5 Website Template"></a></div>
-				</div>
-			</div>
-		</div>
-		<!-- Slider -->
-		
-		<div id="fh5co-intro" class="fh5co-section">
-			<div class="container">
-				<div class="row row-bottom-padded-md">
-					<div class="col-md-8 col-md-offset-2 text-center ts-intro">
-						<h1>Welcome</h1>
-						<p class="fh5co-lead">I'm Bongsung Bae. I will become a graduate (or jobless) in :</p>
-						<h1 id="countdown1"></h1>
-					</div>
-				</div>
-				<div class="row row-bottom-padded-sm">
-				</div>
-				<div class="row row-bottom-padded-sm">
-					<div class="col-md-6">
-						<p><img src="images/myself1_ed1.png" alt="Free HTML5 Bootstrap Template" class="img-responsive img-bordered"></p>
-					</div>
-					<div class="col-md-6 padded-top">
-						<h3>Short Bio</h3>
-						<p>Bongsung Bae is a SBU computer science student who is interested in Linux/Windows system programming, data science,
-							machine learning, and computer game development. He has been a good team player for his 3 undergraduate team projects.
-							He is confident in using C, C++, and Java programing languages.
-							He is from South Korea.</p>
-					</div>
-				</div>
-
-				<div class="row row-bottom-padded-sm">
-				</div>
-			</div>
-		</div>
-
-		<footer id="fh5co-footer" role="contentinfo">
-			<div class="container">
-				<div class="row row-bottom-padded-sm">
-					<div class="col-md-4 col-sm-12">
-						<div class="fh5co-footer-widget">
-							<h3>Contact</h3>
-							<ul class="fh5co-footer-link">
-								<li>bongsung.bae@stonybrook.edu</li>
-								<li>(631) 637-9274</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-3 col-md-push-1 col-sm-12 col-sm-push-0">
-						<div class="fh5co-footer-widget">
-							<h3>Quick Links</h3>
-							<ul class="fh5co-footer-link">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About me</a></li>
-								<li><a href="salerush.html">Game programming project</a></li>
-								<li><a href="data-vis.html">Data visualization project</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-3 col-md-push-2 col-sm-12 col-sm-push-0">
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-12">
-						<div class="fh5co-copyright">
-							<p>This website is based on the template from FreeHTML5.co.</p>
-							<p class="pull-left">&copy; 2016 Free Template. All Rights Reserved. </p>
-							<p class="pull-right">Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	</div>
-
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-chevron-down"></i></a>
-	</div>
-	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/main.js"></script>
-
-	</body>
+  </body>
 </html>
-
