@@ -1,3 +1,9 @@
+Bongsung Bae's personal website
+
+Website URL: https://bsbae402.github.io.
+
+The followings are from the original template's readme:
+--------------------------------------
 
 TITLE: 
 Cache - 100% Fully Responsive Free HTML5 Bootstrap Template
